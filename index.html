@@ -1,13 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="resume">
+        <header class="editable">
+            <h1 id="name">Иван Иванов</h1>
+            <p id="title">Frontend Developer</p>
+        </header>
+        
+        <section class="editable">
+            <h2>Контакты</h2>
+            <ul>
+                <li>Email: <span>ivan@example.com</span></li>
+                <li>Телефон: <span>+7 (999) 123-45-67</span></li>
+                <li>GitHub: <span>github.com/ivanov</span></li>
+            </ul>
+        </section>
+        
+        <section class="editable">
+            <h2>Навыки</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+        
+        <section class="editable">
+            <h2>Опыт работы</h2>
+            <div class="experience">
+                <h3>Веб-студия "Альфа"</h3>
+                <p>Frontend разработчик, 2020-2023</p>
+            </div>
+        </section>
+    </div>
+
+    <button id="downloadBtn">Скачать PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
